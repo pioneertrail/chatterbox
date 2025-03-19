@@ -5,7 +5,7 @@ A real-time chat application that allows users on the same local network to comm
 ## Features
 
 - Real-time messaging using WebSocket technology
-- Modern, responsive UI using Material-UI
+- Modern, responsive UI using Material-UI and Tailwind CSS
 - Room-based chat system
 - User presence indicators
 - Message timestamps
@@ -15,7 +15,9 @@ A real-time chat application that allows users on the same local network to comm
 
 - **Frontend:**
   - React with TypeScript
+  - Vite for fast development
   - Material-UI (MUI)
+  - Tailwind CSS
   - Socket.IO Client
   - Emotion (for styled components)
 
@@ -36,39 +38,51 @@ A real-time chat application that allows users on the same local network to comm
 
 1. Clone the repository:
    ```bash
-   git clone [repository-url]
-   cd fancy-chat-room
+   git clone https://github.com/pioneertrail/chatterbox.git
+   cd chatterbox
    ```
 
-2. Install server dependencies:
+2. Install all dependencies:
    ```bash
-   cd server
-   npm install
-   ```
-
-3. Install client dependencies:
-   ```bash
-   cd ../client
    npm install
    ```
 
 ### Development
 
-1. Start the server:
+1. Start both client and server in development mode:
    ```bash
-   cd server
    npm run dev
    ```
 
-2. Start the client:
+2. Access the application:
+   - Open your browser and navigate to `http://localhost:3801`
+   - Share the local network URL with others on your network
+
+### Production Build
+
+1. Build both client and server:
    ```bash
-   cd client
+   npm run build
+   ```
+
+2. Start the production server:
+   ```bash
    npm start
    ```
 
-3. Access the application:
-   - Open your browser and navigate to `http://localhost:3000`
-   - Share the local network URL with others on your network
+## Project Structure
+
+```
+chatterbox/
+├── client/           # React frontend application
+├── server/           # Node.js backend server
+├── components/       # Shared React components
+├── contexts/         # React context providers
+├── hooks/           # Custom React hooks
+├── types/           # TypeScript type definitions
+├── utils/           # Utility functions
+└── docs/            # Documentation
+```
 
 ## Documentation
 
